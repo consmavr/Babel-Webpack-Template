@@ -19,8 +19,8 @@ module.exports = {
                 presets: ['es3']
             }
         },{
-            test: /\.css$/,
-            loader: 'css-loader'
+            test: /\.css?$/,
+            use: [ 'style-loader', 'css-loader' ]
             }
         ]
     }
